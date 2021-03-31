@@ -13,25 +13,12 @@
 <body class="container mt-3">
 
     <h1>ToDO! SPA Server API</h1>
-    <ul>
-        <li><strong>Atenção:</strong> por restrições da conta free do Heroku, o server da API "dorme" após 30min de
-            inatividade.
-            Consequentemente, pode ser que o seu primeiro acesso demore de 5-10s para completar (aguarde enquanto o servidor
-            inicia),
-            a partir daí os acessos posteriores serão mais rápidos.
-        </li>
-    </ul>
 
     <h2>Instruções gerais</h2>
 
     <ul>
         <li>
-            URL-base: <p><code>https://pw2021q1-todo-spa.herokuapp.com/api</code></p>
-        </li>
-        <li>
-            Todas as requisições da API precisam ser acompanhadas do seu RA, por exemplo, para o
-            <code>RA=1234</code>:<br>
-            <code>https://pw2021q1-todo-spa.herokuapp.com/api/1234/</code><br>
+            URL-base: <p><code>http://localhost:3000/api</code></p>
         </li>
     </ul>
 
@@ -51,7 +38,6 @@
         <li>Os seguintes códigos de status HTTP podem ser enviados como resposta:
             <ul>
                 <li><code>200</code>: sucesso</li>
-                <li><code>401</code>: RA não autorizado</li>
                 <li><code>500</code>: Erro interno do servidor (e.g. falha no BD)</li>
                 <li><code>406</code>: Dados recebidos em formato inválido</li>
             </ul>
@@ -120,7 +106,7 @@ interface ToDoItem {
         <dd>GET</dd>
 
         <dt>Exemplo</dt>
-        <dd><code>https://pw2021q1-todo-spa.herokuapp.com/api/1234/list</code></dd>
+        <dd><code>http://localhost:3000/api/list</code></dd>
 
         <dt>Formato da resposta (sucesso)</dt>
         <dd>
@@ -143,7 +129,7 @@ interface ToDoItem {
         <dd>PUT</dd>
 
         <dt>Exemplo</dt>
-        <dd><code>https://pw2021q1-todo-spa.herokuapp.com/api/1234/add</code></dd>
+        <dd><code>http://localhost:3000/api/add</code></dd>
 
         <dt>Formato do corpo da requisição</dt>
         <dd>
@@ -178,7 +164,7 @@ interface ToDoItem {
         <dd>DELETE</dd>
 
         <dt>Exemplo</dt>
-        <dd><code>https://pw2021q1-todo-spa.herokuapp.com/api/1234/remove/45</code></dd>
+        <dd><code>http://localhost:3000/api/remove/45</code></dd>
         </dd>
 
         <dt>Formato da resposta</dt>
@@ -204,7 +190,7 @@ interface ToDoItem {
         <dd>PUT</dd>
 
         <dt>Exemplo</dt>
-        <dd><code>https://pw2021q1-todo-spa.herokuapp.com/api/1234/update</code></dd>
+        <dd><code>http://localhost:3000/api/update</code></dd>
 
         <dt>Formato do corpo da requisição</dt>
         <dd>
@@ -242,7 +228,7 @@ interface ToDoItem {
         <dd>GET</dd>
 
         <dt>Exemplo</dt>
-        <dd><code>https://pw2021q1-todo-spa.herokuapp.com/api/1234/item/45</code></dd>
+        <dd><code>http://localhost:3000/api/item/45</code></dd>
         </dd>
 
         <dt>Formato da resposta</dt>
